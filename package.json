@@ -1,0 +1,21 @@
+{
+  "name": "yet-another-webpack-and-typescript-starter",
+  "version": "1.0.0",
+  "description": "This is a starter for typescript application with configured webpack",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "ts-loader": "^0.7.2",
+    "typescript": "^1.7.5"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^1.7.0"
+  },
+  "scripts": {
+    "build": "webpack",
+    "server": "webpack-dev-server --progress --colors --inline",
+    "server-auto": "webpack-dev-server --progress --colors"
+  },
+  "author": "Przemyslaw Olech",
+  "license": "MIT"
+}
