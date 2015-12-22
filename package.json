@@ -9,12 +9,14 @@
     "typescript": "^1.7.5"
   },
   "devDependencies": {
-    "html-webpack-plugin": "^1.7.0"
+    "html-webpack-plugin": "^1.7.0",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
   },
   "scripts": {
     "build": "webpack",
-    "server": "webpack-dev-server --progress --colors --inline",
-    "server-auto": "webpack-dev-server --progress --colors"
+    "start": "webpack-dev-server --progress --colors --inline",
+    "start-reload": "webpack-dev-server --progress --colors"
   },
   "author": "Przemyslaw Olech",
   "license": "MIT"

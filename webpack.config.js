@@ -1,4 +1,5 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var webpack = require('webpack');  
 
 module.exports = {  
   context: __dirname + "/app",
@@ -7,7 +8,8 @@ module.exports = {
     path: __dirname + "/dist",
     filename: './bundle.js'
   },
-  plugins: [new HtmlWebpackPlugin()],
+  plugins: [new HtmlWebpackPlugin(), new webpack.optimize.UglifyJsPlugin()],
+  devtool: 'source-map',
   resolve: {
     extensions: ['', '.webpack.js', '.web.js', '.ts', '.js']
   },
